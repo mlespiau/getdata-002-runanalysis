@@ -1,3 +1,5 @@
+source("get_label_from_code.R")
+
 # Read training data sets
 xTrain <- read.table("./UCI HAR Dataset/train/X_train.txt")
 yTrain <- read.table("./UCI HAR Dataset/train/y_train.txt")
@@ -10,15 +12,21 @@ subjectTest <- read.table("./UCI HAR Dataset/test/subject_test.txt")
 
 # Merge the data (test and training nomenclature is no longer needed)
 xRaw <- rbind(xTrain, xTest)
-y <- rbind(yTrain, yTest)
+yRaw <- rbind(yTrain, yTest)
 subject <- rbind(subjectTrain, subjectTest)
 
-# Read feature/measurements names
+# Read feature/measurements names and set them to raw data frame
 names <- read.table("./UCI HAR Dataset/features.txt", sep=" ")
+names(xRaw) <- names$V2
 
 # Select columns with measurements on the mean or the standard deviation
 columnsToExtract <- grepl("mean|Mean|std", as.character(names$V2))
 
 # Filter columns in raw data set
 x <- xRaw[,columnsToExtract]
+
+# Replace labels code with meaningful values
+y <- sapply(yRaw$V1, GetLabelFromCode)
+
+# Replace column names with descriptive names
 
