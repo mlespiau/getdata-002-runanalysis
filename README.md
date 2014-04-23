@@ -9,3 +9,12 @@ This is a repository for Cousera's Getting and Cleaning Data peer assessment pro
 4. Appropriately label the data set with descriptive activity names. 
 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
+Contents
+-----------------------
+According to [The Leek group guide to data sharing]() this repository provides:
+
+1. The raw data (UCI HAR Dataset folder)
+2. A tidy data set ()
+3. A codebook describing each variable and its values in the tidy data set.
+4. An explicit and exact recipe to go from 1 to 2,3. (run_analysis.R)
+
