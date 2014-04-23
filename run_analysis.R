@@ -1,4 +1,6 @@
 source("get_label_from_code.R")
+source("get_descriptive_column_name.R")
+
 
 # Read training data sets
 xTrain <- read.table("./UCI HAR Dataset/train/X_train.txt")
@@ -29,4 +31,4 @@ x <- xRaw[,columnsToExtract]
 y <- sapply(yRaw$V1, GetLabelFromCode)
 
 # Replace column names with descriptive names
-
+names(x) <- GetDescriptiveColumnName(names(x))
