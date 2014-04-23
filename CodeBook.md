@@ -18,38 +18,38 @@ For a detailed description about the measurements and observations please review
 
 Feature names
 ------------------
-tBodyAccelerometer-XYZ
-tGravityAccelerometer-XYZ
-tBodyAccelerometerJerkSignals-XYZ
-tBodyGyroscope-XYZ
-tBodyGyroscopeJerkSignals-XYZ
-tBodyAccelerometerMagnitude
-tGravityAccelerometerMagnitude
-tBodyAccelerometerJerkSignalsMagnitude
-tBodyGyroscopeMag
-tBodyGyroscopeJerkSignalsMagnitude
-fBodyAccelerometer-XYZ
-fBodyAccelerometerJerkSignals-XYZ
-fBodyGyroscope-XYZ
-fBodyAccelerometerMagnitude
-fBodyAccelerometerJerkSignalsMagnitude
-fBodyGyroscopeMagnitude
-fBodyGyroscopeJerkSignalsMagnitude
+* tBodyAccelerometer-XYZ
+* tGravityAccelerometer-XYZ
+* tBodyAccelerometerJerkSignals-XYZ
+* tBodyGyroscope-XYZ
+* tBodyGyroscopeJerkSignals-XYZ
+* tBodyAccelerometerMagnitude
+* tGravityAccelerometerMagnitude
+* tBodyAccelerometerJerkSignalsMagnitude
+* tBodyGyroscopeMag
+* tBodyGyroscopeJerkSignalsMagnitude
+* fBodyAccelerometer-XYZ
+* fBodyAccelerometerJerkSignals-XYZ
+* fBodyGyroscope-XYZ
+* fBodyAccelerometerMagnitude
+* fBodyAccelerometerJerkSignalsMagnitude
+* fBodyGyroscopeMagnitude
+* fBodyGyroscopeJerkSignalsMagnitude
 
 The set of variables that were included from the original data set are: 
 
-Mean: Mean value
-StandardDeviation: Standard deviation
-MeanFrequency: Weighted average of the frequency components to obtain a mean frequency
-angle(): Angle between to vectors.
+* Mean: Mean value
+* StandardDeviation: Standard deviation
+* MeanFrequency: Weighted average of the frequency components to obtain a mean frequency
+* angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccelerometerMean
-tBodyAccelerometerJerkSignalsMean
-tBodyGyroscopeMean
-tBodyGyroscopeJerkSignalsMean
+* gravityMean
+* tBodyAccelerometerMean
+* tBodyAccelerometerJerkSignalsMean
+* tBodyGyroscopeMean
+* tBodyGyroscopeJerkSignalsMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
