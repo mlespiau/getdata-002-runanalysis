@@ -1,7 +1,6 @@
 source("get_label_from_code.R")
 source("get_descriptive_column_name.R")
 
-
 # Read training data sets
 xTrain <- read.table("./UCI HAR Dataset/train/X_train.txt")
 yTrain <- read.table("./UCI HAR Dataset/train/y_train.txt")
@@ -31,4 +30,13 @@ x <- xRaw[,columnsToExtract]
 y <- sapply(yRaw$V1, GetLabelFromCode)
 
 # Replace column names with descriptive names
-names(x) <- GetDescriptiveColumnName(names(x))
+names(x) <- GetDescriptiveColumnName(names(x)) 
+
+# Create dataset 
+subjectAndLabelsData <- cbind(subject, y)
+names(subjectAndLabelsData) <- c("Subject", "Activity")
+data <- cbind(subjectAndLabelsData, x)
+
+# Dump dataset to a csv text file
+write.csv(data, file="./dataset.csv.txt", row.names=FALSE)
+
