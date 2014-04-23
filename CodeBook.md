@@ -1,7 +1,7 @@
 CodeBook: Human Activity Recognition using smartphones data set for cleaning and getting data course 
 =======================
 
-The foundations of this data set are the test and training data provided by the [Human Activity Recognition using smartphones data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). Note: For the purpose of this analysis we did not considered the inertial signals measurements provided in the homonimous folder, only the following files were taken into account for building this data set: train/X_train.txt, train/y_train.txt, train/subject_train.txt, test/X_test.txt, test/y_test.txt and test/subject_test.txt. 
+The foundations of this data set are the test and training data provided by the [Human Activity Recognition using smartphones data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). Note: For the purpose of this analysis we did not considered the inertial signals measurements provided in the homonimous folder, only the following files were taken into account for building this data set: UCI HAR Dataset/train/X_train.txt, UCI HAR Dataset/train/y_train.txt, UCI HAR Dataset/train/subject_train.txt, UCI HAR Dataset/test/X_test.txt, UCI HAR Dataset/test/y_test.txt and UCI HAR Dataset/test/subject_test.txt, UCI HAR Dataset/activity_labels.txt and UCI HAR Dataset/features.txt. 
 
 ## Data set
 
@@ -14,7 +14,7 @@ The first two columns represent the subject and the activity.
 * Subject: Unique id that identifies the study participant (1-30)
 * Activity: Describes the measured activity. (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
 
-The rest of the columns are the featured extracted from the original data set. Plearse read the following section for its interpretation:
+The rest of the columns are the featured extracted from the original data set. Plearse read the following section for its interpretation.
 
 ## Features 
 
@@ -57,6 +57,6 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 * tBodyGyroscopeMean
 * tBodyGyroscopeJerkSignalsMean
 
-The complete list of variables of each feature vector is available in 'features.txt'
+The complete list of variables of each feature vector is available in 'UCI HAR Dataset/features_info.txt'.
 
 
